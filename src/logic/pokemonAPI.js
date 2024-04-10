@@ -3,7 +3,7 @@
 import pokeApi from './api/axiosConfig.js';
 
 async function getPokemons() {
-  const idOfPokemonToGet = generateUniqueRandomNumbers(1, 650);
+  const idOfPokemonToGet = generateUniqueRandomNumbers(1, 649);
   const listOfPokemon = [];
   for (const id of idOfPokemonToGet) {
     const { data: pokemon } = await pokeApi.get(`/pokemon/${id}`);
