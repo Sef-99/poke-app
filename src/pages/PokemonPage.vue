@@ -31,6 +31,7 @@ import {
   getIdPokemonToGuess,
   messageGuess,
 } from '@/logic/pokemonUtils.js';
+import pokeApi from '@/logic/api/axiosConfig.js';
 
 let apiResult;
 const pokemonOptionsList = ref([]);
@@ -41,7 +42,7 @@ const pokemonId = ref();
 let pokemonToGuess;
 
 async function init() {
-  apiResult = await getPokemons();
+  apiResult = await getPokemons(pokeApi);
   pokemonOptionsList.value = apiResult;
   console.log(pokemonOptionsList);
   pokemonToGuess = getIdPokemonToGuess(pokemonOptionsList.value);
