@@ -1,5 +1,7 @@
 <template lang="">
-  <v-progress-circular indeterminate v-if="!pokemonId"></v-progress-circular>
+  <div class="progress-container" v-if="!pokemonId">
+    <v-progress-circular indeterminate></v-progress-circular>
+  </div>
 
   <div v-else>
     <h1>Who's the Pokemón?</h1>
@@ -73,5 +75,12 @@ h1 {
 
 v-btn {
   justify-self: center;
+}
+
+.progress-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full height of the viewport */
 }
 </style>
