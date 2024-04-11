@@ -28,7 +28,7 @@ import { ref, reactive, onMounted } from 'vue';
 import getPokemons from '@/logic/pokemonAPI.js';
 import {
   checkIfCorrectGuess,
-  getIdPokemonToGuess,
+  getPokemonToGuess,
   messageGuess,
 } from '@/logic/pokemonUtils.js';
 import pokeApi from '@/logic/api/axiosConfig.js';
@@ -45,7 +45,7 @@ async function init() {
   apiResult = await getPokemons(pokeApi);
   pokemonOptionsList.value = apiResult;
   console.log(pokemonOptionsList);
-  pokemonToGuess = getIdPokemonToGuess(pokemonOptionsList.value);
+  pokemonToGuess = getPokemonToGuess(pokemonOptionsList.value);
   pokemonId.value = pokemonToGuess.id;
   hasGuessedCorrectly.value = false;
   hasTried.value = false;
