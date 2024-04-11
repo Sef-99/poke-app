@@ -23,7 +23,6 @@ describe('PokemonPicture component related tests', () => {
     });
 
     const listOfImgs = wrapper.findAll('img');
-    console.log(listOfImgs);
 
     expect(listOfImgs).toHaveLength(1);
     expect(listOfImgs[0].classes('hidden-pokemon')).toBeTruthy();
@@ -53,7 +52,6 @@ describe('PokemonPicture component related tests', () => {
     });
 
     const [hiddenImage, answerImage] = wrapper.findAll('img');
-    console.log(answerImage.classes());
     expect(answerImage.classes('fade-in')).toBeTruthy();
     expect(answerImage.attributes('alt')).toEqual('Pokemon Picture Answer');
   });
