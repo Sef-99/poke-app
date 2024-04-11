@@ -8,7 +8,6 @@ async function getPokemons(pokeApi) {
   const idOfPokemonToGet = generateUniqueRandomNumbers(randomJSObject);
   const listOfPokemon = [];
   for (const id of idOfPokemonToGet) {
-    console.log(await pokeApi.get(`/pokemon/${id}`));
     const { data: pokemon } = await pokeApi.get(`/pokemon/${id}`);
     listOfPokemon.push(pokemon);
   }
@@ -22,7 +21,6 @@ export function generateUniqueRandomNumbers(randomJSObject) {
     let randomNumber = Math.floor(randomJSObject() * (max - min + 1)) + min;
     numbers.add(randomNumber);
   }
-  console.log(numbers);
   return Array.from(numbers);
 }
 

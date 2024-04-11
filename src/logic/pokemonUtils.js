@@ -6,7 +6,6 @@ export function getPokemonToGuess(listOfPokemon) {
 }
 
 export function checkIfCorrectGuess(guess, answer) {
-  console.log(guess === answer);
   return guess === answer;
 }
 
