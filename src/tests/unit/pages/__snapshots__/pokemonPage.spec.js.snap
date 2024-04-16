@@ -1,0 +1,13 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Pokemon page related tests > should match snapshot with pokemons 1`] = `
+"<div class="progress-container">
+  <v-progress-circular indeterminate=""></v-progress-circular>
+</div>"
+`;
+
+exports[`Pokemon page related tests > should match with snapshot 1`] = `
+"<div class="progress-container">
+  <v-progress-circular indeterminate=""></v-progress-circular>
+</div>"
+`;

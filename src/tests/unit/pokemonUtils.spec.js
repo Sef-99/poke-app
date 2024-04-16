@@ -4,7 +4,7 @@ import {
   messageGuess,
 } from '@/logic/pokemonUtils.js';
 import { vi, describe, expect, it } from 'vitest';
-import expectedResponse from '@/tests/unit/expectedResponse.json';
+import expectedResponse from '@/tests/unit/mocks/expectedResponse.json';
 
 describe('tests related to pokemonUtils functions', () => {
   const mockRandom = vi.spyOn(globalThis.Math, 'random').mockReturnValue(0);

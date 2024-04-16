@@ -66,6 +66,10 @@ async function newGame() {
 onMounted(async () => {
   init();
 });
+
+defineExpose({
+  init,
+});
 </script>
 <style>
 h1 {

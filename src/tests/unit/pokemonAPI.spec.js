@@ -3,7 +3,7 @@ import getPokemons, {
   generateUniqueRandomNumbers,
 } from '@/logic/pokemonAPI.js';
 import { it, expect, describe, beforeEach, vi } from 'vitest';
-import expectedResponse from '@/tests/unit/expectedResponse.json';
+import expectedResponse from '@/tests/unit/mocks/expectedResponse.json';
 
 describe('Random function tests', () => {
   let array;
