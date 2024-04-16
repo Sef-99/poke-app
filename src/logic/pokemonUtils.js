@@ -1,12 +1,11 @@
 'use strict';
 
-export function getIdPokemonToGuess(listOfPokemon) {
+export function getPokemonToGuess(listOfPokemon) {
   const randomNum = Math.floor(Math.random() * 4);
   return listOfPokemon[randomNum];
 }
 
 export function checkIfCorrectGuess(guess, answer) {
-  console.log(guess === answer);
   return guess === answer;
 }
 

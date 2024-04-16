@@ -1,0 +1,14 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`PokemonOptions component related tests > should match snapshot 1`] = `
+"<div data-v-39189cb9="" class="options-container">
+  <v-col data-v-39189cb9="" class="text-center">
+    <v-btn-toggle data-v-39189cb9="">
+      <v-btn data-v-39189cb9="" disabled="false">pikachu</v-btn>
+      <v-btn data-v-39189cb9="" disabled="false">charmander</v-btn>
+      <v-btn data-v-39189cb9="" disabled="false">venusaur</v-btn>
+      <v-btn data-v-39189cb9="" disabled="false">mew</v-btn>
+    </v-btn-toggle>
+  </v-col>
+</div>"
+`;

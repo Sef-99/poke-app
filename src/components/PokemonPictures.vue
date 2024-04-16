@@ -1,11 +1,11 @@
 <template lang="">
   <div class="pokemon-container">
-    <img class="hidden-pokemon" :src="imgSrc" alt="Pokemon Picture" />
+    <img class="hidden-pokemon" :src="imgSrc" alt="Pokemon Picture Guess" />
     <img
       v-if="hasGuessed"
       class="fade-in"
       :src="imgSrc"
-      alt="Pokemon Picture"
+      alt="Pokemon Picture Answer"
     />
   </div>
 </template>
